@@ -788,6 +788,94 @@ ul { list-style: none; }
 .pauta-content p { color: var(--gray-2); font-size: 0.9rem; }
 .pauta-content strong { color: var(--white); }
 
+/* ─── SCENARIO COMPARISON ─── */
+.comparison-header { margin-top: 80px; margin-bottom: 40px; }
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.scenario-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.scenario-item.pro {
+    border-color: var(--border-hot);
+    background: linear-gradient(145deg, #141616, #0d0f0f);
+}
+.scenario-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.scenario-title {
+    font-family: var(--font-head);
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.scenario-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background: rgba(255,255,255,0.02);
+    padding: 20px;
+    border-radius: var(--radius-sm);
+}
+.metric-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.metric-row span:first-child { color: var(--gray-3); }
+.metric-row span:last-child { color: var(--white); font-weight: 600; }
+.metric-row .highlight { color: var(--primary); }
+
+.scenario-strategy {
+    font-size: 0.88rem;
+    color: var(--gray-2);
+    line-height: 1.6;
+}
+.scenario-strategy ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.scenario-strategy li {
+    font-size: 0.82rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.scenario-strategy li::before { content: '→'; color: var(--primary); font-weight: bold; }
+
+.disclaimer-box {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    margin-top: 20px;
+}
+.disclaimer-box p {
+    font-size: 0.85rem;
+    color: var(--gray-3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.disclaimer-box strong { color: var(--gray-2); }
+
 /* ─── SECTION CTA ─── */
 .section-cta {
     padding: 120px 24px;
@@ -897,4 +985,5 @@ footer {
     .automation-box { flex-direction: column; text-align: center; }
 
     .pricing-grid { grid-template-columns: 1fr; }
+    .scenarios-grid { grid-template-columns: 1fr; }
 }
