@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const value    = Math.round(eased * target);
 
             if (isCurrency) {
-                el.textContent = '$' + value.toLocaleString('es-AR');
+                el.textContent = 'usd ' + value;
             } else {
                 el.textContent = value;
             }
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 requestAnimationFrame(update);
             } else {
                 if (isCurrency) {
-                    el.textContent = '$' + target.toLocaleString('es-AR');
+                    el.textContent = 'usd ' + target;
                 } else {
                     el.textContent = target;
                 }
