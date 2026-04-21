@@ -776,9 +776,16 @@ ul { list-style: none; }
 }
 .amount-label {
     font-size: 0.75rem;
-    color: var(--gray-3);
+    color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 700;
+}
+.amount-detail {
+    font-size: 0.8rem;
+    color: var(--gray-3);
+    margin-top: 5px;
+    line-height: 1.4;
 }
 .sub-amount {
     border-top: 1px solid var(--border);
